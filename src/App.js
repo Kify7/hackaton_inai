@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from "@emotion/styled";
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-function App() {
-  return (
+
+const Contenedor = styled.div`
+  margin: 0 auto;
+  padding: 0;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 2731px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+`
+
+function App (){
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Contenedor>
+        <Header titulo="INAI Candidatos y Partidos Políticos 2021" />
+        <Footer/>
+      </Contenedor>
     </div>
+
   );
 }
 
