@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "@emotion/styled";
 import Header from './components/Header';
 import Footer from './components/Footer';
+import NavBar from './components/Navbar/NavBar';
 
 
 const Contenedor = styled.div`
@@ -21,6 +22,7 @@ function App (){
     <div className="App">
       <Contenedor>
         <Header titulo="INAI Candidatos y Partidos Políticos 2021" />
+        <NavBar></NavBar>
         <Footer/>
       </Contenedor>
     </div>
