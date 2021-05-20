@@ -1,0 +1,10 @@
+.space {
+    margin: 1rem;
+    border: none;
+}
+
+.icon {
+    border: none;
+    width: 64px;
+    height: 64px;
+}

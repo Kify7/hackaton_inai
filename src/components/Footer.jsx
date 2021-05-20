@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Navbar, Container} from "react-bootstrap";
 
-const Footer = () => {
-    return (
-        <div>
-
-            <h3>Todos los Derechos Reservados Team Digital Fr43nds</h3>
-
-        </div>
-    )
-}
+const Footer = ({ derechos}) => {
+  return (
+    <Container>
+      <Navbar expand="lg" variant="light" bg="light">
+        <Navbar.Brand href="#">{derechos}</Navbar.Brand>
+      </Navbar>
+    </Container>
+  );
+};
 
 export default Footer;

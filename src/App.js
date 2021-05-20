@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NavBar from './components/Navbar/NavBar';
+import Map from './components/Map/Map.jsx';
 
 
 const Contenedor = styled.div`
@@ -23,7 +24,8 @@ function App (){
       <Contenedor>
         <Header titulo="INAI Candidatos y Partidos Políticos 2021" />
         <NavBar></NavBar>
-        <Footer/>
+        <Footer derechos="Digital Fr43nds 2021 Todos los Derechos Reservados"/>
+        <Map></Map>
       </Contenedor>
     </div>
 
